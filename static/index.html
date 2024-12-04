@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <head>
+        <title>GPX</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/strapdown@<version tag>/strapdown.min.js"></script>
+        <!-- <script type="module" src="https://md-block.verou.me/md-block.js"></script> -->
+        <script src="https://unpkg.com/md-block"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1 id="header">GPX</h1>
+        <div id="vue-app">
+            <div id="utilization-chart-wrapper">
+                <canvas id="utilization-chart" class="chart-layout"></canvas>
+            </div>
+            <div id="memory-chart-wrapper">
+                <canvas id="memory-chart" class="chart-layout"></canvas>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
