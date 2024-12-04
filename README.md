@@ -2,7 +2,7 @@
 
 GPX is a graphical GPU monitoring utility which allows to inspect system-wide GPU utilization in the web browser via a TCP/HTTP API. This is very handy for timeseries analysis on headless systems such as server distributions. It natively supports **all GPU vendors and OS platforms**.
 
-<p align=center><img src="./demo.png" height=800></p>
+<p align=center><img src="./demo.PNG" height=800></p>
 
 ## Usage
 
@@ -17,6 +17,24 @@ python run_server.py
 ```
 
 The web dashboard can then be accessed at this URL.
+
+### API Backend Endpoint
+
+Use the API endpoint to get data in backend.
+
+```python
+import requests
+
+# your host credentials
+IP = 'HOST IP ADDRESS'
+port = 8080
+
+url = f'http://{IP}:{port}/'
+
+# request data
+data = requests.post(url, json={}).json()
+print(data)
+```
 
 ### Python Import
 
