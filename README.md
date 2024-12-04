@@ -2,7 +2,7 @@
 
 GPX is a graphical GPU monitoring utility which allows to inspect system-wide GPU utilization in the web browser via a TCP/HTTP API. This is very handy for timeseries analysis on headless systems such as server distributions. It natively supports **all GPU vendors and OS platforms**.
 
-<p align=center><img src=demo.png height=800></p>
+<p align=center><img src="./demo.png" height=800></p>
 
 ## Usage
 
